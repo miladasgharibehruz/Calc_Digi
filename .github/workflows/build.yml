@@ -30,7 +30,7 @@ jobs:
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-35" "build-tools;35.0.0"
 
       - name: Extract project
-        run: run: unzip -q MyDigi-Android-Calculator-v1.0.1.zip
+        run: unzip -q MyDigi-Android-Calculator-v1.0.1.zip
 
       - name: Build APK
         run: gradle -p MyDigiAndroid assembleDebug
